@@ -1,0 +1,168 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: 0.14rem;
+  font-style: normal;
+  font-weight: normal;
+}
+
+ul, li {
+  list-style: none;
+}
+
+html {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  font-size: 625%;
+}
+
+img, div, body, html, ul, li, a {
+  -webkit-touch-callout: none;
+}
+
+input, button {
+  outline: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+@media (min-width: 240px) {
+  html {
+    font-size: 64px;
+  }
+}
+
+@media (min-width: 320px) {
+  html {
+    font-size: 85.33333px;
+  }
+}
+
+@media (min-width: 360px) {
+  html {
+    font-size: 96px;
+  }
+}
+
+@media (min-width: 375px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+@media (min-width: 384px) {
+  html {
+    font-size: 102.4px;
+  }
+}
+
+@media (min-width: 411px) {
+  html {
+    font-size: 109.6px;
+  }
+}
+
+@media (min-width: 414px) {
+  html {
+    font-size: 110.4px;
+  }
+}
+
+@media (min-width: 424px) {
+  html {
+    font-size: 113.06667px;
+  }
+}
+
+@media (min-width: 480px) {
+  html {
+    font-size: 128px;
+  }
+}
+
+@media (min-width: 540px) {
+  html {
+    font-size: 144px;
+  }
+}
+
+@media (min-width: 640px) {
+  html {
+    font-size: 170.66667px;
+  }
+}
+
+@media (min-width: 720px) {
+  html {
+    font-size: 192px;
+  }
+}
+
+@media (min-width: 750px) {
+  html {
+    font-size: 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 204.8px;
+  }
+}
+
+@media (min-width: 800px) {
+  html {
+    font-size: 213.33333px;
+  }
+}
+
+@media (min-width: 980px) {
+  html {
+    font-size: 261.33333px;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 273.06667px;
+  }
+}
+
+@media (min-width: 1080px) {
+  html {
+    font-size: 288px;
+  }
+}
+
+@media (min-width: 1152px) {
+  html {
+    font-size: 307.2px;
+  }
+}
+
+@media (min-width: 1366px) {
+  html {
+    font-size: 364.26667px;
+  }
+}
+
+@media (min-width: 1440px) {
+  html {
+    font-size: 384px;
+  }
+}
+
+@media (min-width: 2160px) {
+  html {
+    font-size: 576px;
+  }
+}

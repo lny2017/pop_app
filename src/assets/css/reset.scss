@@ -1,0 +1,72 @@
+@charset "utf-8";
+*{
+  margin:0px;
+  padding:0px;
+  text-decoration:none;
+  box-sizing:border-box;
+  font-size:0.14rem;
+  font-style:normal;
+  font-weight:normal;
+}
+ul,li{
+  list-style:none;
+}
+html{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+    font-size:625%;
+}
+img,div,body,html,ul,li,a{
+ -webkit-touch-callout: none; 
+ }
+ input,button{
+ outline:0;
+
+ }
+ button{
+ cursor:pointer;
+ }
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {
+    color: #ccc;
+}
+
+
+
+
+
+
+
+$num:100%;
+%full{
+    width:$num;
+    height:$num;
+}
+%text{
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+@mixin num($h:auto){
+    width:$num;
+    height:$h;
+}
+@mixin flex($x:center){
+    display:flex;
+    justify-content:$x;
+    align-items:center;
+}
+
+$rem-base-font-size: 100px;
+// UI设计图的分辨率宽度
+$UI-width: 375px;
+// 需要适配的屏幕宽度
+$device-widths: 240px, 320px, 360px, 375px, 384px, 411px, 414px, 424px, 480px, 540px, 640px, 720px, 750px, 768px, 800px, 980px, 1024px, 1080px, 1152px, 1366px, 1440px, 2160px;
+//根据不同设备的屏幕宽度，定义<html>的基准font-size
+@each $current-width in $device-widths {
+    @media (min-width: $current-width) {
+        html {
+            font-size: $current-width * $rem-base-font-size/$UI-width;
+        }
+    }
+}
