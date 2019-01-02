@@ -1,13 +1,13 @@
 <template>
     <div class="wantsale">
-        <h1>wantsale...</h1>
+        <h1>Not Found --- 404...</h1>
     </div>
 </template>
 
 
 <script>
     export default {
-        name: 'Wantsale',
+        name: 'NotFound',
         data () {
             return {
                 msg: 'Welcome to Your Vue.js App'

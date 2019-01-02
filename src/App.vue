@@ -1,17 +1,30 @@
 <template>
 	<div id="app">
 		<router-view class="router-con" />
-		<router-nav class="router-nav" />
+		<router-nav class="router-nav" v-if="routeFlag" />
 	</div>
 </template>
 
 <script>
-import RouterNav from '@/components/indexNav/IndexNav';
+import RouterNav from '@/components/component/indexPage/IndexNav';
 export default {
 	name: 'App',
 	components: {
 		RouterNav
-	}
+	},
+	data () {
+		return {
+			routeFlag: true
+		}
+	},
+	updated () {
+		console.log(this.$route.name);
+		if (this.$route.name === 'IndexPage' || this.$route.name === 'WantSale' || this.$route.name === 'Chat' || this.$route.name === 'Mine') {
+			this.routeFlag = true;
+		} else {
+			this.routeFlag = false;
+		}
+	},
 }
 </script>
 
